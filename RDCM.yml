@@ -1,4 +1,5 @@
 - hosts: TFS17svcsq.dev.wonderware.com
+  tasks:
     - name: Install Remote Desktop Connection Manager from msi
         win_package:
         path: https://download.microsoft.com/download/A/F/0/AF0071F3-B198-4A35-AA90-C68D103BDCCF/rdcman.msi
