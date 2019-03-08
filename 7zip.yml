@@ -1,4 +1,4 @@
--hosts: testing
+- hosts: testing
 - name: Install 7zip and use a file version for the installation check
   win_package:
     path: C:\temp\7z.exe
