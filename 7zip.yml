@@ -1,7 +1,0 @@
-- hosts: TFS17svcsq.dev.wonderware.com
-  tasks:
-  - name: Download Jfrog CLI
-    win_package:
-      path: https://api.bintray.com/content/jfrog/jfrog-cli-go/$latest/jfrog-cli-windows-amd64/jfrog.exe?bt_package=jfrog-cli-windows-amd64
-      creates_version: 16.04
-      state: present
