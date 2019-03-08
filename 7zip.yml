@@ -1,8 +1,8 @@
 - hosts: TFS17svcsq.dev.wonderware.com
   tasks:
-  - name: Install 7zip and use a file version for the installation check
+  - name: Install Visual C and use a file version for the installation check
     win_package:
-      path: C:\temp\7z.exe
+      path: http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
       creates_path: C:\Program Files\7-Zip\7z.exe
       creates_version: 16.04
       state: present
