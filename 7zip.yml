@@ -1,8 +1,7 @@
 - hosts: TFS17svcsq.dev.wonderware.com
   tasks:
-  - name: Install Visual C and use a file version for the installation check
+  - name: Download Jfrog CLI
     win_package:
-      path: \\devnas12.dev.wonderware.com\PSPGALLERY\Modules\TFSSetup.ps1
-      creates_path: C:\Program Files\7-Zip\7z.exe
+      path: https://api.bintray.com/content/jfrog/jfrog-cli-go/$latest/jfrog-cli-windows-amd64/jfrog.exe?bt_package=jfrog-cli-windows-amd64
       creates_version: 16.04
       state: present
