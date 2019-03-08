@@ -1,4 +1,4 @@
-- hosts: testing
+- hosts: TFS17svcsq.dev.wonderware.com
   tasks:
   - name: Install 7zip and use a file version for the installation check
     win_package:
